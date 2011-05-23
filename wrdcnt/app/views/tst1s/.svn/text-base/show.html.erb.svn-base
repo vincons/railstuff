@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @tst1.name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @tst1.age %>
+</p>
+
+
+<%= link_to 'Edit', edit_tst1_path(@tst1) %> |
+<%= link_to 'Back', tst1s_path %>

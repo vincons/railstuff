@@ -1,0 +1,307 @@
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 00:23:20 +0530 2011
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___542216703_70355698999020_0 at /home/raghav/railstuff/social-trending/src/app/views/search/index.html.erb:39)
+Rendered search/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 00:23:21 +0530 2011
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___542216703_70355698591580_0 at /home/raghav/railstuff/social-trending/src/app/views/search/index.html.erb:39)
+Rendered search/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Thu Apr 07 00:23:24 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"oQyqdsv6oxDwvOc3FMa6mWERK8ruInDZT1VAv9aSgtg=", "utf8"=>"✓", "message"=>"ipad2"}
+Completed   in 190520ms
+
+Errno::ETIMEDOUT (Connection timed out - connect(2)):
+  app/controllers/search_controller.rb:27:in `join'
+  app/controllers/search_controller.rb:27:in `srch'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.7ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 00:32:56 +0530 2011
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___542216703_70082624353900_0 at /home/raghav/railstuff/social-trending/src/app/views/search/index.html.erb:39)
+Rendered search/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 00:32:57 +0530 2011
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___542216703_70082623946460_0 at /home/raghav/railstuff/social-trending/src/app/views/search/index.html.erb:39)
+Rendered search/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 00:32:58 +0530 2011
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___542216703_70082626578700_0 at /home/raghav/railstuff/social-trending/src/app/views/search/index.html.erb:39)
+Rendered search/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 00:32:59 +0530 2011
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___542216703_70082626075920_0 at /home/raghav/railstuff/social-trending/src/app/views/search/index.html.erb:39)
+Rendered search/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Thu Apr 07 00:33:05 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"oQyqdsv6oxDwvOc3FMa6mWERK8ruInDZT1VAv9aSgtg=", "utf8"=>"✓", "message"=>"galaxy s"}
+Completed   in 190308ms
+
+Errno::ETIMEDOUT (Connection timed out - connect(2)):
+  app/controllers/search_controller.rb:27:in `join'
+  app/controllers/search_controller.rb:27:in `srch'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (71.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (77.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 01:05:41 +0530 2011
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___542216703_69827671609500_0 at /home/raghav/railstuff/social-trending/src/app/views/search/index.html.erb:39)
+Rendered search/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Fri Apr 08 01:06:43 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"ttDqAYplOm5c0wzvELkHxEpgVBNxxyRso2mJJa2eZEI=", "utf8"=>"✓", "message"=>"libya"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_chsrch_html_erb__742641085_69827673254280_0 at /home/raghav/railstuff/social-trending/src/app/views/search/chsrch.html.erb:158)
+Rendered search/chsrch.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 14337ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/theme1%5Cnew.css" for 127.0.0.1 at Fri Apr 08 01:06:58 +0530 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/search/theme1%5Cnew.css" for 127.0.0.1 at Fri Apr 08 01:06:58 +0530 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Fri Apr 08 01:07:56 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"ttDqAYplOm5c0wzvELkHxEpgVBNxxyRso2mJJa2eZEI=", "utf8"=>"✓", "message"=>"ipad2"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_chsrch_html_erb__742641085_69827673211020_0 at /home/raghav/railstuff/social-trending/src/app/views/search/chsrch.html.erb:158)
+Rendered search/chsrch.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 10159ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/theme1%5Cnew.css" for 127.0.0.1 at Fri Apr 08 01:08:07 +0530 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+
+
+Started GET "/search/theme1%5Cnew.css" for 127.0.0.1 at Fri Apr 08 01:08:07 +0530 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Fri Apr 08 01:09:14 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"ttDqAYplOm5c0wzvELkHxEpgVBNxxyRso2mJJa2eZEI=", "utf8"=>"✓", "message"=>"galaxys"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_chsrch_html_erb__742641085_69827673734240_0 at /home/raghav/railstuff/social-trending/src/app/views/search/chsrch.html.erb:158)
+Rendered search/chsrch.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 6861ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/theme1%5Cnew.css" for 127.0.0.1 at Fri Apr 08 01:09:21 +0530 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+
+
+Started GET "/search/theme1%5Cnew.css" for 127.0.0.1 at Fri Apr 08 01:09:21 +0530 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Fri Apr 08 01:12:25 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"ttDqAYplOm5c0wzvELkHxEpgVBNxxyRso2mJJa2eZEI=", "utf8"=>"✓", "message"=>"japan earthquake"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_chsrch_html_erb__742641085_69827673943420_0 at /home/raghav/railstuff/social-trending/src/app/views/search/chsrch.html.erb:158)
+Rendered search/chsrch.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 9029ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/theme1%5Cnew.css" for 127.0.0.1 at Fri Apr 08 01:12:34 +0530 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/search/theme1%5Cnew.css" for 127.0.0.1 at Fri Apr 08 01:12:34 +0530 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Fri Apr 08 01:14:08 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"ttDqAYplOm5c0wzvELkHxEpgVBNxxyRso2mJJa2eZEI=", "utf8"=>"✓", "message"=>"india corruption"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_chsrch_html_erb__742641085_69827673636440_0 at /home/raghav/railstuff/social-trending/src/app/views/search/chsrch.html.erb:158)
+Rendered search/chsrch.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 9176ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/theme1%5Cnew.css" for 127.0.0.1 at Fri Apr 08 01:14:17 +0530 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/search/theme1%5Cnew.css" for 127.0.0.1 at Fri Apr 08 01:14:17 +0530 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 26 00:50:33 +0530 2011
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___542216703_70027846556740_0 at /home/raghav/railstuff/social-trending/src/app/views/search/index.html.erb:56)
+Rendered search/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 26 00:50:35 +0530 2011
+  Processing by SearchController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_index_html_erb___542216703_70027846151600_0 at /home/raghav/railstuff/social-trending/src/app/views/search/index.html.erb:56)
+Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Tue Apr 26 00:50:41 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xNfom2+8cJcqngVflWrVE4pEwdYIUEl4WN6+2qSvjQY=", "utf8"=>"✓", "message"=>"love"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_chsrch_html_erb__742641085_70027849018300_0 at /home/raghav/railstuff/social-trending/src/app/views/search/chsrch.html.erb:165)
+Rendered search/chsrch.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 10721ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/theme1/new.css" for 127.0.0.1 at Tue Apr 26 00:50:52 +0530 2011
+
+AbstractController::ActionNotFound (The action 'theme1' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Tue Apr 26 00:51:56 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xNfom2+8cJcqngVflWrVE4pEwdYIUEl4WN6+2qSvjQY=", "utf8"=>"✓", "message"=>"hate"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_chsrch_html_erb__742641085_70027848212260_0 at /home/raghav/railstuff/social-trending/src/app/views/search/chsrch.html.erb:165)
+Rendered search/chsrch.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 7362ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/theme1/new.css" for 127.0.0.1 at Tue Apr 26 00:52:04 +0530 2011
+
+AbstractController::ActionNotFound (The action 'theme1' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Tue Apr 26 00:52:11 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xNfom2+8cJcqngVflWrVE4pEwdYIUEl4WN6+2qSvjQY=", "utf8"=>"✓", "message"=>"shit"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_chsrch_html_erb__742641085_70027848553120_0 at /home/raghav/railstuff/social-trending/src/app/views/search/chsrch.html.erb:165)
+Rendered search/chsrch.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 8296ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/theme1/new.css" for 127.0.0.1 at Tue Apr 26 00:52:20 +0530 2011
+
+AbstractController::ActionNotFound (The action 'theme1' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Tue Apr 26 00:53:12 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xNfom2+8cJcqngVflWrVE4pEwdYIUEl4WN6+2qSvjQY=", "utf8"=>"✓", "message"=>"israel"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_chsrch_html_erb__742641085_70027848889040_0 at /home/raghav/railstuff/social-trending/src/app/views/search/chsrch.html.erb:165)
+Rendered search/chsrch.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 9337ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/theme1/new.css" for 127.0.0.1 at Tue Apr 26 00:53:22 +0530 2011
+
+AbstractController::ActionNotFound (The action 'theme1' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Tue Apr 26 00:53:30 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xNfom2+8cJcqngVflWrVE4pEwdYIUEl4WN6+2qSvjQY=", "utf8"=>"✓", "message"=>"united nations"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_chsrch_html_erb__742641085_70027848118900_0 at /home/raghav/railstuff/social-trending/src/app/views/search/chsrch.html.erb:165)
+Rendered search/chsrch.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 11603ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/theme1/new.css" for 127.0.0.1 at Tue Apr 26 00:53:42 +0530 2011
+
+AbstractController::ActionNotFound (The action 'theme1' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started POST "/search/srch" for 127.0.0.1 at Tue Apr 26 00:54:36 +0530 2011
+  Processing by SearchController#srch as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xNfom2+8cJcqngVflWrVE4pEwdYIUEl4WN6+2qSvjQY=", "utf8"=>"✓", "message"=>"UN"}
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_search_chsrch_html_erb__742641085_70027849236240_0 at /home/raghav/railstuff/social-trending/src/app/views/search/chsrch.html.erb:165)
+Rendered search/chsrch.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 9161ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/theme1/new.css" for 127.0.0.1 at Tue Apr 26 00:54:46 +0530 2011
+
+AbstractController::ActionNotFound (The action 'theme1' could not be found for SearchController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)

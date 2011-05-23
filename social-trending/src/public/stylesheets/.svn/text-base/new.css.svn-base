@@ -1,0 +1,70 @@
+body 
+	{ 
+		font-family: arial ;
+		padding-left:10px;
+	}
+	
+#div0 
+	{
+		position: absolute;
+		padding-left:15px;
+		width:400;
+		height:440;
+		visibility: hidden;
+	}
+
+#div1 
+	{
+		position: absolute;
+		padding-left:15px;
+		width:400;
+		height:440;		
+		visibility: hidden;
+	}
+	
+#div2
+	{
+		position: absolute;
+		padding-left:15px;
+		width:400;
+		height:440;	
+		visibility: hidden;
+	}
+#div3
+       {
+               position: absolute;
+               padding-left:15px;
+               width:400;
+               height:440;        
+               visibility: hidden;
+       }
+	
+.vline
+	{
+		border-left: thin solid #cccccc;
+	}
+.hline
+	{
+		color:#cccccc;
+		width: 100%;
+		float:right;
+	}
+.chartlinks
+	{
+		padding: 5px;
+	}
+.default
+	{
+		display: block;
+		padding: 5px;
+		width:400px;
+		height:400px;
+	}
+.button
+      {
+         height:30px;
+   }
+.style1
+      {
+         height:25px;
+   }

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/36/trunk/src/app/views/search
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/29/trunk/src/app/views/search/index.html.erb
+END
+chsrch.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/36/trunk/src/app/views/search/chsrch.html.erb
+END
+srch.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/29/trunk/src/app/views/search/srch.html.erb
+END

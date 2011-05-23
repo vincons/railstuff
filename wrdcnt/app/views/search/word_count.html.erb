@@ -1,0 +1,38 @@
+<html>
+<head>
+
+<title>
+	mood analysis using Social networking sites
+</title>
+</head>
+
+<body>
+
+
+<center>
+
+<p>Sample image
+<!--
+<p><img src="/images/google_logo.png"/>
+<p>This image would be replaced by a proper logo later... used for sampling purposes
+<hr>
+-->
+<p> Results page...
+<p> text string passed on to me was - <%= params["message"] %>
+</CENTER>
+
+<%=   
+                      
+w = Words.all
+
+w.each do |w1|
+%>
+
+    <td><%= w1.word %></td><td> <%= w1.count %> </td>
+
+<% end %>
+
+
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<table width="1031" height="700" border="0">
+  <tr> 
+    <td width="25" rowspan="2">&nbsp;</td>
+    <td colspan="3"><a href="n.html">HOME</a></td>
+    <td height="70" colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td width="300" colspan="2" rowspan="20"><p align="center" /p>
+      <input type="image" name="imageField" id="imageField" src="../images.jpg" height="200" width="200">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+    <td height="57" colspan="2" align="center"><font size="+3">PAA</font></td>
+    <td colspan="2"><font size="+2">(2009)</font></td>
+  </tr>
+  <tr> 
+    <td rowspan="8">&nbsp;</td>
+    <td width="109"><div align="center"></div></td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="4">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="22">&nbsp;</td>
+    <td colspan="2">Producer:</td>
+    <td colspan="4">Sunil Manchanda</td>
+  </tr>
+  <tr> 
+    <td><div align="center"></div></td>
+    <td colspan="2">Director:</td>
+    <td colspan="4"> R Balakrishnan</td>
+  </tr>
+  <tr> 
+    <td height="22"> <div align="center"></div></td>
+    <td colspan="2">Actor:</td>
+    <td colspan="4"><a href="n3.html">Amitabh Bachchan</a>, Abhishek Bachchan, Paresh Rawal</td>
+  </tr>
+  <tr> 
+    <td><div align="center"></div></td>
+    <td colspan="2">Actress:</td>
+    <td colspan="4">Vidya Balan, Arundhati Nag</td>
+  </tr>
+  <tr> 
+    <td><div align="center"></div></td>
+    <td colspan="2">Music Director:</td>
+    <td colspan="4">Ilayaraja</td>
+  </tr>
+  <tr> 
+    <td rowspan="2"><div align="center"></div></td>
+    <td colspan="2">Lyricist:</td>
+    <td colspan="4"> Swanand Kirkire</td>
+  </tr>
+  <tr> 
+    <td colspan="2">Singers:</td>
+    <td colspan="4">Sunidhi Chauhan, Shilpa Rao, Shaan, Bhavatharani, Amitabh 
+      Bachchan</td>
+  </tr>
+  <tr> 
+    <td height="34" rowspan="9">&nbsp;</td>
+    <td height="26" colspan="3">&nbsp;</td>
+    <td colspan="4">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="58"><div align="center">SONGS:</div></td>
+    <td width="118" height="58">&nbsp;</td>
+    <td colspan="5"> <div align="right"></div></td>
+  </tr>
+  <tr> 
+    <td height="59" rowspan="6">&nbsp;</td>
+    <td height="28" colspan="4">* Mudi Mudi</td>
+    <td height="28" colspan="2">Singer- Shaan</td>
+  </tr>
+  <tr> 
+    <td height="29" colspan="4">* Gum Sum Gum</td>
+    <td height="29" colspan="2">SInger- Bhavatharani</td>
+  </tr>
+  <tr> 
+    <td height="31" colspan="4">* Halke Se Bole</td>
+    <td height="31" colspan="2">Singer- Bhavatharani</td>
+  </tr>
+  <tr> 
+    <td height="30" colspan="4">* Hichki Hichki</td>
+    <td height="30" colspan="2">Singer- Sunidhi Chauhan</td>
+  </tr>
+  <tr> 
+    <td height="28" colspan="4">* Mere Paa</td>
+    <td height="28" colspan="2">Singer- Amitabh Bachchan</td>
+  </tr>
+  <tr> 
+    <td height="30" colspan="4">* Mudi Mudi (Female)</td>
+    <td height="30" colspan="2">Singer- Shilpa Rao</td>
+  </tr>
+  <tr> 
+    <td height="27" colspan="7">&nbsp;</td>
+  </tr>
+  <tr align="center"> 
+    <td height="74">&nbsp;</td>
+    <td><div align="center"> 
+        <input name="Submit2" type="submit" value="Buy Audio CD">
+      </div></td>
+    <td colspan="2"><input name="Submit" type="submit" value="Buy Audio cassete"></td>
+    <td width="8"><div align="center"> </div></td>
+    <td width="117"><div align="center"> 
+        <input name="Submit3" type="submit" value="Buy Vedio CD">
+      </div></td>
+    <td width="180"><div align="center"> 
+        <input name="Submit4" type="submit" value="Buy Vedio Cassetes(VHS)">
+      </div></td>
+    <td width="118"><input name="Submit5" type="submit" value="Buy DVD"></td>
+  </tr>
+</table>
+</body>
+</html>

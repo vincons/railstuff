@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+
+<meta name="keywords" content="facebook, twitter, text mining, opinion, mining, data mining, mood, perception, people, public, social, social-mood, social mood" />
+
+    <title>mood</title>
+    <style type="text/css">
+        .style1
+        {
+            height: 25px;
+        }
+		.button
+{
+	height: 32px;
+}
+    </style>
+
+<script type="text/javascript">
+
+function validateForm()
+{
+
+var x=document.mood.message.value ;
+if (x==null || x=="")
+  {
+  alert("Plz Enter the Text......!!");
+             mood.message.focus(); 
+	return false;
+
+  }
+  
+}
+
+</script>
+
+<!-- code for google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7782940-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+<body>
+    <br /><br /><br /><br /><br /><br />
+<% form_tag({:controller => "search", :action => "srch"},{:name => "mood" , :onSubmit => "return validateForm();"}) do %>
+    <table align=center>
+        <tr>
+            <td colspan="2"><div align=center><img src=/images/logo4.png /><font color="red"><b>beta</b></font></div></td>
+        </tr>
+        <tr><td><br /><br /><br /></td></tr>
+        <tr>
+            <td class="style1"><div align=center>
+                <%= text_field_tag(:message, nil,:size => 80,:class => "style1" ) %></div>
+            </td>
+            <td><%= submit_tag "Search",:class => "button"  %>
+            </td>
+        </tr>
+    </table>
+	
+<% end %>  
+
+
+<br>
+<Center> Enter keywords and we'll query Facebook&reg; and Twitter&reg; to find how people feel about these keywords. 
+<br>Based on a basic text mining algorithm, we'd score the publicly available messages in three categories, 
+<font color="green"><b>Happy</b></font>, <font color="red"><b>Sad</b></font> and <font color="grey"><b>Neutral</b></font>.   
+<!--
+We are still in <font color="red"><b><u>beta</u></b></font> version, and 
+use a basic text mining algorithm to score people's messages to derive the scores.
+-->
+<hr>
+<br>
+&copy; Vinayak Consultants Inc. 2011 </center>
+<br>
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5934605835521432";
+/* forMoodIndexPage */
+google_ad_slot = "6294996199";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center>
+</body>
+</html>

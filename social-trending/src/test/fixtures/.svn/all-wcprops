@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/29/trunk/src/test/fixtures
+END
+msgdata.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/29/trunk/src/test/fixtures/msgdata.yml
+END
+emos.yml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/29/trunk/src/test/fixtures/emos.yml
+END
+tst1s.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/29/trunk/src/test/fixtures/tst1s.yml
+END

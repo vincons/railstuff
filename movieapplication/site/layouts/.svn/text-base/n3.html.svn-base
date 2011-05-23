@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<table width="932" height="229" border="0">
+  <tr>
+    <td width="49" rowspan="2">&nbsp;</td>
+    <td colspan="2"><a href="n.html">HOME</a></td>
+  </tr>
+  <tr align="center">
+    <td colspan="2"><font size="+3">Amitabh bachchan</font></td>
+  </tr>
+  <tr align="center">
+    <td>&nbsp;</td>
+    <td width="474">born in xyz</td>
+    <td width="395">blah-blah</td>
+  </tr>
+  <tr align="center">
+    <td>&nbsp;</td>
+    <td>blah-blah</td>
+    <td>blah-blah</td>
+  </tr>
+</table>
+</body>
+</html>

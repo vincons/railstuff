@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+	mood analysis using Social networking sites
+</title>
+</head>
+
+<body>
+<center>
+<p>Sample image
+<p><img src="/images/google_logo.png"/>
+<p>This image would be replaced by a proper logo later... used for sampling purposes
+<% form_tag(:controller => "search", :action => "srch") do %>  
+<%= text_field_tag(:message, nil) %><br />  
+<%= submit_tag("Search") %>  
+
+<hr>
+<%= link_to 'List all Messages in db', :controller => "listmsgs", :action => "index" %>
+
+<%= link_to 'Add Emotion words', :controller => "emos", :action => "index" %>
+
+</CENTER>
+<% end %>  
+
+<% #  %>
+</body>
+</html>

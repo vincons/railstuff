@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/29/trunk/src/db/migrate
+END
+20110317145019_alter_posts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/29/trunk/src/db/migrate/20110317145019_alter_posts.rb
+END
+20110317141209_create_emos.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/29/trunk/src/db/migrate/20110317141209_create_emos.rb
+END
+20110314193618_create_msgdata.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/29/trunk/src/db/migrate/20110314193618_create_msgdata.rb
+END
+20110315212800_create_tst1s.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/29/trunk/src/db/migrate/20110315212800_create_tst1s.rb
+END

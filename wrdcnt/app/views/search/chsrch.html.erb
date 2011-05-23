@@ -1,0 +1,228 @@
+<html>
+<head>
+
+<title>
+	mood analysis using Social networking sites
+</title>
+</head>
+
+<body>
+
+
+<center>
+
+<p>Sample image
+<!--
+<p><img src="/images/google_logo.png"/>
+<p>This image would be replaced by a proper logo later... used for sampling purposes
+<hr>
+-->
+<p> Results page...
+<p> text string passed on to me was - <%= params["message"] %>
+</CENTER>
+<% @sum_h = 0%>
+<% @sum_s = 0%>
+<% @sum_h1 = 0%>
+<% @sum_s1 = 0%>
+<% @sum_h2 = 0%>
+<% @sum_s2 = 0%>
+<p> got <%= @hash_for_view.length %> results from twitter search
+<table border=1 >
+<% @hsh_happy1 = @hash_for_view.select {|key,value| value > 0} %>
+<p> got happy <%= @hsh_happy1.length %> results from twitter search
+<% @hsh_happy1.each do |key, value| %>
+        <% @sum_h1 = @sum_h1 + value %>
+							<% end %>
+         <tr>Total happy score<td><%= @sum_h1 %></td> </tr> 
+</table>
+Avg happy score <%= @sum_h1/@hsh_happy1.length %>
+<table border=1 >
+<% @hsh_sad1 = @hash_for_view.select {|key,value| value < 0} %>
+<p> got sad <%= @hsh_sad1.length %> results from twitter search
+<% @hsh_sad1.each do |key, value| %>
+ <% @sum_s1 = @sum_s1 + value %>
+							<% end %>
+<tr>Total Sad score<td><%= @sum_s1 %></td> </tr> 
+</table>
+Avg sad score <%= @sum_s1/@hsh_sad1.length %>
+<% @hsh_neutral1 = @hash_for_view.length - (@hsh_happy1.length + @hsh_sad1.length)  %>
+<p> got neutral<%= @hsh_neutral1 %> results from twitter search
+
+
+
+
+<p> got <%= @hash_for_see.length %> results from  fb search
+<table border=1 >
+<% @hsh_happy2 = @hash_for_see.select {|key,value| value > 0} %>
+<p> got happy <%= @hsh_happy2.length %> results from fb search
+<% @hsh_happy2.each do |key, value| %>
+        <% @sum_h2 = @sum_h2 + value %>
+							<% end %>
+         <tr>Total happy score<td><%= @sum_h2 %></td> </tr> 
+</table>
+Avg happy score <%= @sum_h2/@hsh_happy2.length %>
+<table border=1 >
+<% @hsh_sad2 = @hash_for_see.select {|key,value| value < 0} %>
+<p> got sad <%= @hsh_sad2.length %> results from fb search
+<% @hsh_sad2.each do |key, value| %>
+ <% @sum_s2 = @sum_s2 + value %>
+							<% end %>
+<tr>Total Sad score<td><%= @sum_s2 %></td> </tr> 
+</table>
+Avg sad score <%= @sum_s2/@hsh_sad2.length %>
+<% @hsh_neutral2 = @hash_for_see.length - (@hsh_happy2.length + @hsh_sad2.length)  %>
+<p> got neutral<%= @hsh_neutral2 %> results from fb search
+
+
+
+
+
+<%  @hash_for_view = @hash_for_view.merge!(@hash_for_see)%>
+<p> got <%= @hash_for_view.length %> results from total search
+<table border=1 >
+<% @hsh_happy = @hash_for_view.select {|key,value| value > 0} %>
+<p> got happy <%= @hsh_happy.length %> results from total search
+<% @hsh_happy.each do |key, value| %>
+        <% @sum_h = @sum_h + value %>
+							<% end %>
+         <tr>Total happy score<td><%= @sum_h %></td> </tr> 
+</table>
+Avg happy score <%= @sum_h/@hsh_happy.length %>
+<table border=1 >
+<% @hsh_sad = @hash_for_view.select {|key,value| value < 0} %>
+<p> got sad <%= @hsh_sad.length %> results from total search
+<% @hsh_sad.each do |key, value| %>
+ <% @sum_s = @sum_s + value %>
+							<% end %>
+<tr>Total Sad score<td><%= @sum_s %></td> </tr> 
+</table>
+Avg sad score <%= @sum_s/@hsh_sad.length %>
+<% @hsh_neutral = @hash_for_view.length - (@hsh_happy.length + @hsh_sad.length)  %>
+<p> got neutral<%= @hsh_neutral %> results from total search
+
+
+
+
+
+<p>Results from total search
+
+<div id="cont1" style="width:660px; height:500px;"></div>
+<script type="text/javascript" charset="utf-8">
+  var chart;
+$(document).ready(function() {
+   chart = new Highcharts.Chart({
+      chart: {
+         renderTo: 'cont1',
+         defaultSeriesType: 'column'
+      },
+      title: {
+         text: 'Column chart with negative values'
+      },
+      xAxis: {
+         categories: ['Happy', 'Neutral', 'Sad']
+      },
+      tooltip: {
+         formatter: function() {
+            return ''+
+                this.series.name +': '+ this.y +'';
+         }
+      },
+      credits: {
+         enabled: false
+      },
+      series: [{
+         name: 'Avg_Score',
+         data: [ <%= @hsh_happy.length %> ,<%= @hsh_neutral %>,  <%= @hsh_sad.length %>]
+      }]
+   });
+   
+   
+});
+</script>
+
+<p> Results from Facebook search
+<div id="cont2" style="width:660px; height:500px;"></div>
+<script type="text/javascript" charset="utf-8">
+  var chart;
+$(document).ready(function() {
+   chart = new Highcharts.Chart({
+      chart: {
+         renderTo: 'cont2',
+         defaultSeriesType: 'column'
+      },
+      title: {
+         text: 'Column chart with negative values'
+      },
+      xAxis: {
+         categories: ['Happy', 'Neutral', 'Sad']
+      },
+      tooltip: {
+         formatter: function() {
+            return ''+
+                this.series.name +': '+ this.y +'';
+         }
+      },
+      credits: {
+         enabled: false
+      },
+      series: [{
+         name: 'Avg_Score',
+         data: [ <%= @hsh_happy2.length %> ,<%= @hsh_neutral2 %>,  <%= @hsh_sad2.length %>]
+      }]
+   });
+   
+   
+});
+</script>
+<p>Results from twitter search
+<div id="cont3" style="width:660px; height:500px;"></div>
+<script type="text/javascript" charset="utf-8">
+  var chart;
+$(document).ready(function() {
+   chart = new Highcharts.Chart({
+      chart: {
+         renderTo: 'cont3',
+         defaultSeriesType: 'column'
+      },
+      title: {
+         text: 'Column chart with negative values'
+      },
+      xAxis: {
+         categories: ['Happy', 'Neutral', 'Sad']
+      },
+      tooltip: {
+         formatter: function() {
+            return ''+
+                this.series.name +': '+ this.y +'';
+         }
+      },
+      credits: {
+         enabled: false
+      },
+      series: [{
+         name: 'Avg_Score',
+		 
+         data: [ <%= @hsh_happy1.length %> ,<%= @hsh_neutral1 %>,  <%= @hsh_sad1.length %>]
+      }]
+   });
+   
+   
+});
+</script>
+
+<!--
+data: [{
+	name: 'Point 1',
+	color:'#00FF00'
+	y: 0
+}, {
+	name: 'Point 2',
+	color: '#FF00FF',
+	y: 5
+}]
+-->
+
+
+
+</body>
+</html>

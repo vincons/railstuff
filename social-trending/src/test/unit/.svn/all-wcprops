@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/29/trunk/src/test/unit
+END
+emo_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/29/trunk/src/test/unit/emo_test.rb
+END
+msgdata_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/29/trunk/src/test/unit/msgdata_test.rb
+END
+tst1_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/29/trunk/src/test/unit/tst1_test.rb
+END

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0030)http://localhost/moviehome.php -->
+<HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Untitled Document</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><LINK 
+href="new layouts_files/h2.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<TABLE height=70 width=1365 border=0>
+  <TBODY>
+  <TR align=middle>
+    <TD class=text4 align=middle width=737 height=66>MOVIE<SPAN 
+      class=text5>FUN</SPAN></TD>
+    <TD class=bg5 width=68><FONT size=+1>MOVIE</FONT>
+      <DIV></DIV></TD>
+    <TD class=bg5 width=220><INPUT id=textfield4 maxLength=30 size=35 
+      name=textfield4></TD>
+    <TD class=bg5 width=161><A href="http://localhost/movielist.php"><IMG 
+      height=37 src="new layouts_files/search.jpg" width=70></A></TD>
+    <TD width=157></TD></TR></TBODY></TABLE>
+<TABLE class=header height=89 width=1365 border="0">
+  <TBODY>
+  <TR>
+    <TD height=85>&nbsp;</TD></TR></TBODY></TABLE>
+<TABLE width=1364 border=0>
+  <TBODY>
+  <TR>
+    <TD bgColor=#cccccc colSpan=5 height=27>
+      <DIV align=center><FONT size=+2><STRONG>ADDS</STRONG></FONT></DIV></TD></TR>
+  <TR>
+    <TD colSpan=3 height=22>
+      <TABLE width=753 border=0>
+        <TBODY>
+        <TR align=middle>
+          <TD width=229><IMG height=37 src="new layouts_files/home.jpg" 
+            width=70></TD>
+          <TD width=227><IMG height=37 src="new layouts_files/about_us.jpg" 
+            width=70></TD>
+          <TD width=227><IMG height=37 src="new layouts_files/contacts.jpg" 
+            width=70></TD></TR></TBODY></TABLE></TD>
+    <TD>&nbsp;</TD>
+    <TD height=10>&nbsp;</TD></TR>
+  <TR>
+    <TD width=83 rowSpan=3>&nbsp;</TD>
+    <TD vAlign=center align=middle width=237 height=88>
+      <P>&nbsp;</P>
+      <P><FONT size=+2><STRONG>TOP 10 searches</STRONG></FONT> </P></TD>
+    <TD vAlign=top width=741 rowSpan=3>
+      <TABLE class=tab width=558 align=center border=0>
+        <TBODY>
+        <TR align=middle>
+          <TD width=326 height=57><INPUT id=textfield2 maxLength=30 size=35 
+            name=textfield2></TD>
+          <TD width=119><SELECT class=inputbox name=select> <OPTION value="" 
+              selected>Select</OPTION> <OPTION value=Actor>Actor</OPTION> 
+              <OPTION value=Actress>Actress</OPTION> <OPTION 
+              value=Director>Director</OPTION> <OPTION 
+              value=Lyricist>Lyricist</OPTION> <OPTION 
+              value=Composer>Composer</OPTION></SELECT></TD></TR>
+        <TR>
+          <TD width=326>&nbsp;</TD></TR>
+        <TR align=middle>
+          <TD height=57><INPUT id=textfield3 maxLength=30 size=35 
+            name=textfield3></TD>
+          <TD><SELECT class=inputbox name=select2> <OPTION value="" 
+              selected>Select</OPTION> <OPTION value=Actor>Actor</OPTION> 
+              <OPTION value=Actress>Actress</OPTION> <OPTION 
+              value=Director>Director</OPTION> <OPTION 
+              value=Lyricist>Lyricist</OPTION> <OPTION 
+              value=Composer>Composer</OPTION></SELECT></TD>
+          <TD width=99><INPUT id=radio type=radio value=radio name=radio> 
+            <FONT size=+1><STRONG>Not</STRONG></FONT></TD></TR>
+        <TR align=middle>
+          <TD height=71><INPUT id=textfield maxLength=30 size=35 
+            name=textfield></TD>
+          <TD><SELECT class=inputbox name=select3> <OPTION value="" 
+              selected>Select</OPTION> <OPTION value=Actor>Actor</OPTION> 
+              <OPTION value=Actress>Actress</OPTION> <OPTION 
+              value=Director>Director</OPTION> <OPTION 
+              value=Lyricist>Lyricist</OPTION> <OPTION 
+              value=Composer>Composer</OPTION></SELECT></TD>
+          <TD><INPUT id=radio2 type=radio value=radio name=radio> <FONT 
+            size=+1><STRONG>Not</STRONG></FONT></TD></TR>
+        <TR align=middle>
+          <TD height=160>&nbsp;</TD>
+          <TD><A href="http://localhost/movielist.php"><IMG height=37 
+            src="new layouts_files/search.jpg" width=70></A></TD>
+          <TD>&nbsp;</TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=top width=261 rowSpan=3>
+      <DIV align=center>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P>
+      <P><STRONG><FONT size=+2>NEWS</FONT></STRONG></P></DIV></TD>
+    <TD width=20 rowSpan=3>&nbsp;</TD></TR>
+  <TR>
+    <TD vAlign=top align=middle height=153>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD vAlign=top align=middle>&nbsp;</TD></TR></TBODY></TABLE>
+<TABLE class=tab2 height=359 width=1366 border=0>
+  <TBODY>
+  <TR>
+    <TD width=161 height=152>&nbsp;</TD>
+    <TD width=232>&nbsp;</TD>
+    <TD width=232>&nbsp;</TD>
+    <TD width=232>&nbsp;</TD>
+    <TD width=232>&nbsp;</TD>
+    <TD width=237>&nbsp;</TD></TR>
+  <TR class=lr>
+    <TD colSpan=6>
+      <TABLE width=1354 border=1>
+        <TBODY>
+        <TR align=left>
+          <TD width=668 height=117><FONT size=+1>CONTACT US:</FONT></TD>
+          <TD width=676><FONT size=+1>EMAIL ADDRESS:</FONT> 
+      </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></BODY></HTML>

@@ -1,0 +1,39 @@
+.header {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(copiedmaal%20copy.jpg)
+}
+.text4 {
+	FONT-SIZE: 32px; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: -2px; TEXT-DECORATION: none
+}
+.text5 {
+	COLOR: #2de5db
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #FFFFFF
+}
+BODY {
+	FONT-SIZE: 11px; COLOR: #888888; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TH {
+	FONT-SIZE: 11px; COLOR: #888888; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 11px; COLOR: #888888; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+INPUT {
+	FONT-SIZE: 11px; COLOR: #888888; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TEXTAREA {
+	FONT-SIZE: 11px; COLOR: #888888; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+SELECT {
+	FONT-SIZE: 11px; COLOR: #888888; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+lr {
+	BACKGROUND-COLOR: #999999
+}
+.bg5 {
+	BACKGROUND: url(img3.jpg) #1b1c1e repeat-y left top
+}

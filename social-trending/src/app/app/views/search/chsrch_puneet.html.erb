@@ -1,0 +1,531 @@
+<html>
+	<head>
+<%= javascript_include_tag "rails","jquery-1.5.1.min", "highcharts" %>
+<% @sum_h = 0%>
+<% @sum_s = 0%>
+<% @sum_h1 = 0%>
+<% @sum_s1 = 0%>
+<% @sum_h2 = 0%>
+<% @sum_s2 = 0%>
+
+<table  >
+<% @hsh_happy1 = @hash_for_view.select {|key,value| value > 0} %>
+
+<% @hsh_happy1.each do |key, value| %>
+        <% @sum_h1 = @sum_h1 + value %>
+							<% end %>
+         
+</table>
+
+<table  >
+<% @hsh_sad1 = @hash_for_view.select {|key,value| value < 0} %>
+
+<% @hsh_sad1.each do |key, value| %>
+ <% @sum_s1 = @sum_s1 + value %>
+							<% end %>
+
+</table>
+
+<% @hsh_neutral1 = @hash_for_view.length - (@hsh_happy1.length + @hsh_sad1.length)  %>
+<% @pie_happy1 = @hsh_happy1.length*100/@hash_for_view.length %>
+<% @pie_sad1 = @hsh_sad1.length*100/@hash_for_view.length %>
+<% @pie_neutral1 = @hsh_neutral1*100/@hash_for_view.length %>
+
+
+
+
+<table  >
+<% @hsh_happy2 = @hash_for_see.select {|key,value| value > 0} %>
+
+<% @hsh_happy2.each do |key, value| %>
+        <% @sum_h2 = @sum_h2 + value %>
+							<% end %>
+        
+</table>
+
+<table >
+<% @hsh_sad2 = @hash_for_see.select {|key,value| value < 0} %>
+
+<% @hsh_sad2.each do |key, value| %>
+ <% @sum_s2 = @sum_s2 + value %>
+							<% end %>
+
+</table>
+
+<% @hsh_neutral2 = @hash_for_see.length - (@hsh_happy2.length + @hsh_sad2.length)  %>
+<% @pie_happy2 = @hsh_happy2.length*100/@hash_for_see.length %>
+<% @pie_sad2 = @hsh_sad2.length*100/@hash_for_see.length %>
+<% @pie_neutral2 = @hsh_neutral2*100/@hash_for_see.length %>
+
+
+
+
+<%  @hash_for_view = @hash_for_view.merge!(@hash_for_see)%>
+
+<table  >
+<% @hsh_happy = @hash_for_view.select {|key,value| value > 0} %>
+
+<% @hsh_happy.each do |key, value| %>
+        <% @sum_h = @sum_h + value %>
+							<% end %>
+         
+</table>
+
+<table  >
+<% @hsh_sad = @hash_for_view.select {|key,value| value < 0} %>
+
+<% @hsh_sad.each do |key, value| %>
+ <% @sum_s = @sum_s + value %>
+							<% end %>
+
+</table>
+
+<% @hsh_neutral = @hash_for_view.length - (@hsh_happy.length + @hsh_sad.length)  %>
+<% @pie_happy = @hsh_happy.length*100/@hash_for_view.length %>
+<% @pie_sad = @hsh_sad.length*100/@hash_for_view.length %>
+<% @pie_neutral = @hsh_neutral*100/@hash_for_view.length %>
+
+		<script>
+			function showonlyone(thechosenone) {
+				var newboxes = document.getElementsByTagName("div");
+				for(var x=0; x<newboxes.length; x++) {
+					name = newboxes[x].getAttribute("name");
+					if (name == 'newboxes') {
+                        if (newboxes[x].id == thechosenone) {
+                        newboxes[x].style.display = 'block';
+						}
+						else {
+                        newboxes[x].style.display = 'none';
+						}
+					}
+				}
+			}
+
+			numdivs=2
+
+			IE5=NN4=NN6=false
+			if(document.all)IE5=true
+			else if(document.layers)NN4=true
+			else if(document.getElementById)NN6=true
+
+			function init() {
+				showDiv(0)
+				showonlyone('newboxes2')
+			}
+			function showDiv( which ) {
+				for(i=0;i<=numdivs;i++) {
+					if(NN4) eval("document.div"+i+".visibility='hidden'")
+					if(IE5) eval("document.all.div"+i+".style.visibility='hidden'")
+					if(NN6) eval("document.getElementById('div"+i+"').style.visibility='hidden'")
+				}
+				if(NN4) eval("document.div"+which+".visibility='visible'")
+				if(IE5) eval("document.all.div"+which+".style.visibility='visible'")
+				if(NN6) eval("document.getElementById('div"+which+"').style.visibility='visible'")
+				if ( which==0 )
+				{
+				 showonlyone('newboxes2')
+				}
+				else if ( which == 1)
+				{
+				 showonlyone('newboxes4')
+				}
+				else
+				{
+				 showonlyone('newboxes6')
+				}
+			}
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="theme1\new.css" /> 
+	</head>
+
+	<body onload="init();">
+	
+	<% form_tag(:controller => "search", :action => "srch") do %>
+			
+			<table align="left">
+			<tr><td style="padding-left:20px;"><img src="\images\logo3.png" /></td><td style="padding-left:20px;">
+                   <%= text_field_tag(:message,nil,:size => 80,:class => "style1" , :placeholder => params["message"] ) %>
+
+ </td>
+                   <td> <%= submit_tag "Search",:size => 80,:class => "button" %></td>
+				</tr>
+				
+				<tr>
+					<td rowspan=3>
+						<table style="padding-left:10px; padding-top:20px;">
+							<tr>
+								<td><img src="\images\df.png" onclick = "return showDiv(0)" ></td>
+							</tr>
+							<tr>
+								<td><img src="\images\fb.png" onclick = "return showDiv(1)"></td>
+							</tr>
+							<tr>
+								<td><img src="\images\tw.png" onclick = "return showDiv(2)"></td>
+							</tr>
+						</table>
+						  <hr align="right" class="hline" />
+					</td>
+					<td rowspan=3 align="center">
+						
+							<DIV ID="div0" class="vline" >						
+								<table>
+									<tr>
+										<td>
+											<div class="chartlinks">
+            <a id="myHeader1" href="javascript:showonlyone('newboxes1');" >Column Chart</a>
+                                            </div>
+										</td>
+										<td>
+											<div class="chartlinks">
+            <a id="myHeader2" href="javascript:showonlyone('newboxes2');" >Pie Chart</a>
+	                                        </div>
+										</td>
+										
+									</tr>
+								</table>
+								<table>
+									<tr>
+										<td>
+										<div name="newboxes" id="newboxes1" class="default"></div>
+                                           <script type="text/javascript" charset="utf-8">
+												var chart;
+												$(document).ready(function() {
+												chart = new Highcharts.Chart({
+												chart: {
+												renderTo: 'newboxes1',
+												defaultSeriesType: 'column'
+														},
+												title: {
+													text: 'Column chart for <%=  params["message"]  %> '
+														},
+												legend: {
+       
+														borderColor: 'nil'
+															},
+												xAxis: {
+													categories: ['Happy', 'Neutral', 'Sad']
+														},
+												tooltip: {
+													formatter: function() {
+																			return ''+
+																			this.x +': '+ this.y +'';
+																			}
+														},
+												credits: {
+															enabled: false
+														},
+												series: [{
+													name: 'Score',
+													data: [  {
+                        name : "happy",
+                        color : "#254117",
+                        y : <%= @hsh_happy.length%>
+                } ,<%= @hsh_neutral %>, { name : "sad",
+                        color : "#800517",
+                        y : <%= @hsh_sad.length %>}]
+						}]
+																			});
+   
+   
+																			});
+											</script>
+										</td>
+										<td>
+										<div name="newboxes" id="newboxes2" class="default"></div>
+          		                          <script type="text/javascript">
+											var chart;
+											$(document).ready(function() {
+											chart = new Highcharts.Chart({
+											chart: {
+											renderTo: 'newboxes2',
+											plotBackgroundColor: null,
+											plotBorderWidth: null,
+											plotShadow: false
+													},
+											title: {
+													text: 'Pie chart for <%=  params["message"]  %> '
+													},
+											legend: {
+		
+													borderColor: 'nil'
+													},
+											tooltip: {
+													formatter: function() {
+														return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+																			}
+														},
+											plotOptions: {
+											pie: {
+												allowPointSelect: true,
+												cursor: 'pointer',
+											dataLabels: {
+													enabled: false
+														},
+														showInLegend: true
+													}
+														},
+											series: [{
+											type: 'pie',
+											name: 'Browser share',
+											data: [
+														['HAPPY',<%= @pie_happy %>],
+							['SAD',<%= @pie_sad %>],
+							['NEUTRAL',<%= @pie_neutral %>],
+													]
+													}]
+																			});
+																		});
+				
+									</script>
+
+										</td>
+										
+									</tr>
+								</table>
+							</DIV> 
+							<DIV ID="div1" class="vline" >							
+								<table>
+									<tr>
+										<td>
+											<div class="chartlinks">
+            <a id="myHeader1" href="javascript:showonlyone('newboxes3');" >Column Chart</a>
+                                          </div>
+										</td>
+										<td>
+											<div class="chartlinks">
+            <a id="myHeader2" href="javascript:showonlyone('newboxes4');" >Pie Chart</a>
+											</div>
+										</td>
+										
+									</tr>
+								</table>
+								<table>
+									<tr>
+										<td>
+											 <div name="newboxes" id="newboxes3" class="default"></div>
+										<script type="text/javascript" charset="utf-8">
+											var chart;
+											$(document).ready(function() {
+											chart = new Highcharts.Chart({
+											chart: {
+											renderTo: 'newboxes3',
+											defaultSeriesType: 'column'
+													},
+											title: {
+											text: 'Column chart for <%=  params["message"]  %> '
+													},
+											legend: {
+       
+											borderColor: 'nil'
+													},
+											xAxis: {
+											categories: ['Happy', 'Neutral', 'Sad']
+													},
+											tooltip: {
+													formatter: function() {
+													return ''+
+													this.x +': '+ this.y +'';
+																			}
+														},
+											credits: {
+													enabled: false
+														},
+											series: [{
+											name: 'Score',
+											data: [{
+                        name : "happy",
+                        color : "#254117",
+                        y : <%= @hsh_happy2.length%>
+                } ,<%= @hsh_neutral2 %>, { name : "sad",
+                        color : "#800517",
+                        y : <%= @hsh_sad2.length %>}]
+						}]
+													
+																		});
+   
+   
+																			});
+									</script>
+										</td>
+										<td>
+											<div name="newboxes" id="newboxes4" class="default"></div>
+									<script type="text/javascript">
+		
+										var chart;
+										$(document).ready(function() {
+									   chart = new Highcharts.Chart({
+									  chart: {
+									 renderTo: 'newboxes4',
+										plotBackgroundColor: null,
+										plotBorderWidth: null,					 
+										 plotShadow: false
+											},			  										 
+									  title: {
+										 text: 'Pie chart for <%=  params["message"]  %> '
+									  },
+									   legend: {
+									   
+										borderColor: 'nil'
+									},
+										  tooltip: {
+											 formatter: function() {
+												return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+											 }
+										  },
+										  plotOptions: {
+											 pie: {
+									allowPointSelect: true,
+									cursor: 'pointer',
+									dataLabels: {
+									   enabled: false
+										},
+										showInLegend: true
+									 }
+								  },
+								   series: [{
+									 type: 'pie',
+									 name: 'Mood',
+									 data: [
+										['HAPPY',<%= @pie_happy2 %>],
+							['SAD',<%= @pie_sad2 %>],
+							['NEUTRAL',<%= @pie_neutral2 %>],
+									 ]
+								  }]
+							   });
+					});
+									
+							</script>
+
+										</td>
+										
+									</tr>
+								</table>
+							</DIV> 
+							<DIV ID="div2" class="vline" >
+								<table>
+									<tr>
+										<td>
+											<div class="chartlinks">
+            <a id="myHeader1" href="javascript:showonlyone('newboxes5');" >Column Chart</a>
+												</div>
+										</td>
+										<td>
+											 <div class="chartlinks">
+            <a id="myHeader2" href="javascript:showonlyone('newboxes6');" >Pie Chart</a>
+										</div>
+										</td>	
+										
+									</tr>
+								</table>
+								<table>
+									<tr>
+										<td>
+											<div name="newboxes" id="newboxes5" class="default"></div>
+									  <script type="text/javascript" charset="utf-8">
+							  var chart;
+							$(document).ready(function() {
+							   chart = new Highcharts.Chart({
+								  chart: {
+									 renderTo: 'newboxes5',
+									 defaultSeriesType: 'column'
+								  },
+								  title: {
+									 text: 'Column chart for <%=  params["message"]  %> '
+								  },
+								   legend: {
+								   
+									borderColor: 'nil'
+								},
+								  xAxis: {
+									 categories: ['Happy', 'Neutral', 'Sad']
+								  },
+								  tooltip: {
+									 formatter: function() {
+										return ''+
+											this.x +': '+ this.y +'';
+									 }
+								  },
+								  credits: {
+									 enabled: false
+								  },
+								  series: [{
+									 name: 'Score',
+									 data: [ {
+                        name : "happy",
+                        color : "#254117",
+                        y : <%= @hsh_happy1.length%>
+                } ,<%= @hsh_neutral1 %>, { name : "sad",
+                        color : "#800517",
+                        y : <%= @hsh_sad1.length %>}]
+						}]
+								  
+							   });
+							   
+							   
+							});
+							</script>
+     
+										</td>
+										<td>
+											<div name="newboxes" id="newboxes6" class="default"></div>
+												 <script type="text/javascript">
+												
+													var chart;
+										$(document).ready(function() {
+										   chart = new Highcharts.Chart({
+											  chart: {
+												 renderTo: 'newboxes6',
+												 plotBackgroundColor: null,
+												 plotBorderWidth: null,
+												 plotShadow: false
+											  },
+											  title: {
+												 text: 'Pie chart for <%=  params["message"]  %> '
+											  },
+											   legend: {
+												
+												borderColor: 'nil'
+											},
+											  tooltip: {
+												 formatter: function() {
+													return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+												 }
+											  },
+											  plotOptions: {
+												 pie: {
+													allowPointSelect: true,
+													cursor: 'pointer',
+													dataLabels: {
+													   enabled: false
+													},
+													showInLegend: true
+												 }
+											  },
+											   series: [{
+												 type: 'pie',
+												 name: 'Mood',
+												 data: [
+												   ['HAPPY',<%= @pie_happy1 %>],
+							['SAD',<%= @pie_sad1 %>],
+							['NEUTRAL',<%= @pie_neutral1 %>],
+												 ]
+											  }]
+										   });
+										});
+														
+												</script>
+
+
+										</td>
+										
+									</tr>
+								</table>
+							</div>
+					</td>
+				</tr>
+			</table>
+			   
+<% end %>
+		</body>
+	</html>

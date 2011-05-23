@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+	        mood analysis using Social networking sites
+        </title>
+    </head>
+
+    <body>
+
+
+    <center>
+    <p>Sample image
+    <p><img src="/images/google_logo.png"/>
+    <p>This image would be replaced by a proper logo later... used for sampling purposes
+    <hr>
+    <p> Results page...
+    <p> text string passed on to me was - <%= params["message"] %>
+    </CENTER>
+
+
+    <p> got <%= @hash_for_view.length %> results from search
+    <table border=1 >
+
+    <hr>
+
+    <table border=1 >
+    <% @hash_for_view.each do |key, value| %>
+    <tr> 
+
+            <td><%= key %></td> 
+            <td><%= value %></td>
+
+    <% end %>
+
+    </tr>
+
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Word:</b>
+  <%= @emo.word %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%= @emo.score %>
+</p>
+
+
+<%= link_to 'Edit', edit_emo_path(@emo) %> |
+<%= link_to 'Back', emos_path %>

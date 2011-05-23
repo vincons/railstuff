@@ -1,0 +1,689 @@
+<html>
+	<head>
+<%= stylesheet_link_tag "new" %>
+<%= javascript_include_tag "rails","jquery-1.5.1.min", "highcharts" %>
+
+		
+	    <% @sum_h = 0%>
+<% @sum_s = 0%>
+<% @sum_h1 = 0%>
+<% @sum_s1 = 0%>
+<% @sum_h2 = 0%>
+<% @sum_s2 = 0%>
+<% begin %>
+<table  >
+<% @hsh_happy1 = @hash_for_view.select {|key,value| value > 0} %>
+
+<% @hsh_happy1.each do |key, value| %>
+        <% @sum_h1 = @sum_h1 + value %>
+							<% end %>
+         
+</table>
+
+<table  >
+<% @hsh_sad1 = @hash_for_view.select {|key,value| value < 0} %>
+
+<% @hsh_sad1.each do |key, value| %>
+ <% @sum_s1 = @sum_s1 + value %>
+							<% end %>
+
+</table>
+
+<% @hsh_neutral1 = @hash_for_view.length - (@hsh_happy1.length + @hsh_sad1.length)  %>
+<% @pie_happy1t = (@hsh_happy1.length*100).to_f/@hash_for_view.length.to_f %>
+<% @pie_happy1 = sprintf('%.2f',@pie_happy1t) %>
+<% @pie_sad1t = (@hsh_sad1.length*100).to_f/@hash_for_view.length.to_f %>
+<% @pie_sad1 = sprintf('%.2f',@pie_sad1t) %>
+<% @pie_neutral1t = (@hsh_neutral1*100).to_f/@hash_for_view.length.to_f %>
+<% @pie_neutral1 = sprintf('%.2f',@pie_neutral1t) %>
+
+
+
+<table  >
+<% @hsh_happy2 = @hash_for_see.select {|key,value| value > 0} %>
+
+<% @hsh_happy2.each do |key, value| %>
+        <% @sum_h2 = @sum_h2 + value %>
+							<% end %>
+        
+</table>
+
+<table >
+<% @hsh_sad2 = @hash_for_see.select {|key,value| value < 0} %>
+
+<% @hsh_sad2.each do |key, value| %>
+ <% @sum_s2 = @sum_s2 + value %>
+							<% end %>
+
+</table>
+
+<% @hsh_neutral2 = @hash_for_see.length - (@hsh_happy2.length + @hsh_sad2.length)  %>
+<% @pie_happy2f = (@hsh_happy2.length*100).to_f/@hash_for_see.length.to_f %>
+<% @pie_happy2 = sprintf('%.2f',@pie_happy2f) %>
+<% @pie_sad2f = (@hsh_sad2.length*100).to_f/@hash_for_see.length.to_f %>
+<% @pie_sad2 = sprintf('%.2f',@pie_sad2f) %>
+<% @pie_neutral2f = (@hsh_neutral2*100).to_f/@hash_for_see.length.to_f %>
+<% @pie_neutral2 = sprintf('%.2f',@pie_neutral2f) %>
+
+
+
+
+<%  @hash_for_view = @hash_for_view.merge!(@hash_for_see)%>
+
+<table  >
+<% @hsh_happy = @hash_for_view.select {|key,value| value > 0} %>
+
+<% @hsh_happy.each do |key, value| %>
+        <% @sum_h = @sum_h + value %>
+							<% end %>
+         
+</table>
+
+<table  >
+<% @hsh_sad = @hash_for_view.select {|key,value| value < 0} %>
+
+<% @hsh_sad.each do |key, value| %>
+ <% @sum_s = @sum_s + value %>
+							<% end %>
+
+</table>
+
+<% @hsh_neutral = @hash_for_view.length - (@hsh_happy.length + @hsh_sad.length)  %>
+<% @pie_happyt = (@hsh_happy.length*100).to_f/@hash_for_view.length.to_f %>
+<% @pie_happy = sprintf('%.2f',@pie_happyt) %>
+<% @pie_sadt = (@hsh_sad.length*100).to_f/@hash_for_view.length.to_f %>
+<% @pie_sad = sprintf('%.2f',@pie_sadt) %>
+<% @pie_neutralt = (@hsh_neutral*100).to_f/@hash_for_view.length.to_f %>
+<% @pie_neutral = sprintf('%.2f',@pie_neutralt) %>
+
+		<script>
+			function showonlyone(thechosenone) {
+				var newboxes = document.getElementsByTagName("div");
+				for(var x=0; x<newboxes.length; x++) {
+					name = newboxes[x].getAttribute("name");
+					if (name == 'newboxes') {
+                        if (newboxes[x].id == thechosenone) {
+                        newboxes[x].style.display = 'block';
+						}
+						else {
+                        newboxes[x].style.display = 'none';
+						}
+					}
+				}
+			}
+
+			numdivs=3
+
+			IE5=NN4=NN6=false
+			if(document.all)IE5=true
+			else if(document.layers)NN4=true
+			else if(document.getElementById)NN6=true
+
+			function init() {
+				showDiv(0)
+				showonlyone('newboxes2')
+			}
+			function showDiv( which ) {
+				for(i=0;i<=numdivs;i++) {
+					if(NN4) eval("document.div"+i+".visibility='hidden'")
+					if(IE5) eval("document.all.div"+i+".style.visibility='hidden'")
+					if(NN6) eval("document.getElementById('div"+i+"').style.visibility='hidden'")
+				}
+				if(NN4) eval("document.div"+which+".visibility='visible'")
+				if(IE5) eval("document.all.div"+which+".style.visibility='visible'")
+				if(NN6) eval("document.getElementById('div"+which+"').style.visibility='visible'")
+				if ( which==0 )
+				{
+				 showonlyone('newboxes2')
+				}
+				else if ( which == 1)
+				{
+				 showonlyone('newboxes4')
+				}
+				else if(which == 2)
+				{
+				 showonlyone('newboxes6')
+				}
+				else
+				{
+				 showonlyone('newboxes7')
+				}
+			}
+			
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="theme1\new.css" /> 
+	</head>
+
+	<body onload="init();">
+	
+	
+			
+			<table align="left">
+			<tr><td style="padding-left:20px;"><%= link_to image_tag('/images/logo3.png'), '/' %></td><td style="padding-left:20px;">
+                   
+				   <% form_tag(:controller => "search", :action => "srch") do %>
+				   <%= text_field_tag(:message,nil,:size => 80,:class => "style1" , :placeholder => params["message"] ) %>
+
+ </td>
+                   <td> <%= submit_tag "Search",:size => 80,:class => "button" %></td>
+				   <% end %>
+				</tr>
+				
+				<tr>
+					<td rowspan=3>
+						<table style="padding-left:10px; padding-top:20px;">
+							<tr>
+								<td	onclick = "return showDiv(0)" onmouseover="this.style.cursor='pointer';this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"><strong>Opinion</strong></td>
+							</tr>
+							<tr>
+								<td onclick = "return showDiv(1)" onmouseover="this.style.cursor='pointer';this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"><strong>Facebook</strong></td>
+							</tr>
+							<tr>
+								<td onclick = "return showDiv(2)" onmouseover="this.style.cursor='pointer';this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"><strong>Twitter</strong></td>
+							</tr>
+							<tr>
+								<td onclick = "return showDiv(3)" onmouseover="this.style.cursor='pointer';this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"><strong>Comparison</strong></td>
+							</tr>
+<tr><td><hr align="right" class="hline" /></td></tr>
+							<tr>
+							<td>
+								<script type="text/javascript"><!--
+								google_ad_client = "ca-pub-5934605835521432";
+								/* moodResultLeftBar */
+								google_ad_slot = "5918943716";
+								google_ad_width = 120;
+								google_ad_height = 240;
+								//-->
+								</script>
+								<script type="text/javascript"
+								src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+								</script>
+							</td>
+							</tr>
+						</table>
+						  
+					</td>
+					<td rowspan=2 align="center">
+						
+							<DIV ID="div0" class="vline"><strong> Total Result	</strong>					
+								
+								<table>
+									<tr>
+										<td>
+										<div name="newboxes" id="newboxes1" class="default"></div>
+                                           <script type="text/javascript" charset="utf-8">
+												var chart;
+												$(document).ready(function() {
+												chart = new Highcharts.Chart({
+												chart: {
+												renderTo: 'newboxes1',
+												defaultSeriesType: 'column'
+														},
+												title: {
+													text: 'Column chart for <%=  params["message"]  %> '
+														},
+												legend: {
+                                                         
+														borderColor: 'nil'
+															},
+												xAxis: {
+													categories: ['Happy', 'Neutral', 'Sad']
+														},
+														  yAxis: {
+						min: 0,
+						title: {
+							text: 'No. of comments'
+						}
+						},
+												tooltip: {
+													formatter: function() {
+																			return ''+
+																			this.x +': '+ this.y +'';
+																			}
+														},
+														 plotOptions: {
+         column: {
+             
+            borderWidth: 0
+			
+         }
+      },
+												credits: {
+															enabled: false
+														},
+												series: [{
+											name: 'Score',
+											data: [  { name : "Happy",
+                                                               color : "#254117",
+                                                               y : <%= @hsh_happy.length%>
+                                                             } ,
+															 { name : "Neutral",
+                                                               color : "#3BB9FF",
+                                                               y : <%= @hsh_neutral%>
+                                                             },
+															 { name : "Sad",
+                                                               color : "#800517",
+                                                               y : <%= @hsh_sad.length %>}]
+						                                     }]
+						                                     
+																			});
+   
+   
+																			});
+											</script>
+										</td>
+										
+										<td>
+										<div name="newboxes" id="newboxes2" class="default"></div>
+          		                          <script type="text/javascript">
+											var chart;
+											Highcharts.setOptions({
+                                        colors: ['#254117', '#800517','#3BB9FF']
+                                        });
+											$(document).ready(function() {
+											chart = new Highcharts.Chart({
+											chart: {
+											renderTo: 'newboxes2',
+											plotBackgroundColor: null,
+											plotBorderWidth: null,
+											plotShadow: false
+													},
+											title: {
+													text: 'Pie chart for <%=  params["message"]  %> '
+													},
+											legend: {
+		
+													borderColor: 'nil'
+													},
+											tooltip: {
+													formatter: function() {
+														return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+																			}
+														},
+											plotOptions: {
+											pie: {
+												allowPointSelect: true,
+												cursor: 'pointer',
+											dataLabels: {
+													enabled: false
+														},
+														showInLegend: true
+													}
+														},
+											series: [{
+											type: 'pie',
+											name: 'Browser share',
+											data: [
+														['HAPPY',<%= @pie_happy %>],
+							['SAD',<%= @pie_sad %>],
+							['NEUTRAL',<%= @pie_neutral %>],
+													]
+													}]
+																			});
+																		});
+				
+									</script>
+
+										</td>
+										
+									</tr>
+								</table>
+								<table align= "left">
+									<tr>
+										<td align = "left">
+											<div class="chartlinks">
+            <a id="myHeader1" href="javascript:showonlyone('newboxes1');" ><strong>Column Chart</strong></a>
+                                            </div>
+										</td>
+										<td align = "left">
+											<div class="chartlinks">
+            <a id="myHeader2" href="javascript:showonlyone('newboxes2');" ><strong>Pie Chart</strong></a>
+	                                        </div>
+										</td>
+										
+									</tr>
+								</table>
+							</DIV> 
+							<DIV ID="div1" class="vline" ><strong> Facebook Result </strong>						
+								
+								<table>
+									<tr>
+										<td>
+											 <div name="newboxes" id="newboxes3" class="default"></div>
+										<script type="text/javascript" charset="utf-8">
+											var chart;
+											$(document).ready(function() {
+											chart = new Highcharts.Chart({
+											chart: {
+											renderTo: 'newboxes3',
+											defaultSeriesType: 'column'
+													},
+											title: {
+											text: 'Column chart for <%=  params["message"]  %> '
+													},
+											legend: {
+       
+											borderColor: 'nil'
+													},
+											xAxis: {
+											categories: ['Happy', 'Neutral', 'Sad']
+													},
+													  yAxis: {
+						min: 0,
+						title: {
+							text: 'No. of comments'
+						}
+						},
+											tooltip: {
+													formatter: function() {
+													return ''+
+													this.x +': '+ this.y +'';
+																			}
+														},
+											credits: {
+													enabled: false
+														},
+											series: [{
+											name: 'Score',
+											data: [  { name : "Happy",
+                                                               color : "#254117",
+                                                               y : <%= @hsh_happy2.length%>
+                                                             } ,
+															 { name : "Neutral",
+                                                               color : "#3BB9FF",
+                                                               y : <%= @hsh_neutral2%>
+                                                             },
+															 { name : "Sad",
+                                                               color : "#800517",
+                                                               y : <%= @hsh_sad2.length %>}]
+						                                     }]
+													
+																		});
+   
+   
+																			});
+									</script>
+										</td>
+										<td>
+											<div name="newboxes" id="newboxes4" class="default"></div>
+									<script type="text/javascript">
+		
+										var chart;
+										Highcharts.setOptions({
+                                        colors: ['#254117', '#800517','#3BB9FF']
+                                        });
+										$(document).ready(function() {
+									   chart = new Highcharts.Chart({
+									  chart: {
+									 renderTo: 'newboxes4',
+										plotBackgroundColor: null,
+										plotBorderWidth: null,					 
+										 plotShadow: false
+											},			  										 
+									  title: {
+										 text: 'Pie chart for <%=  params["message"]  %> '
+									  },
+									   legend: {
+									   
+										borderColor: 'nil'
+									},
+										  tooltip: {
+											 formatter: function() {
+												return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+											 }
+										  },
+										  plotOptions: {
+											 pie: {
+									allowPointSelect: true,
+									cursor: 'pointer',
+									dataLabels: {
+									   enabled: false
+										},
+										showInLegend: true
+									 }
+								  },
+								   series: [{
+									 type: 'pie',
+									 name: 'Mood',
+									 data: [
+										['HAPPY',<%= @pie_happy2 %>],
+							['SAD',<%= @pie_sad2 %>],
+							['NEUTRAL',<%= @pie_neutral2 %>],
+									 ]
+								  }]
+							   });
+					});
+									
+							</script>
+
+										</td>
+										
+									</tr>
+								</table>
+								<table align = "left">
+									<tr>
+										<td>
+											<div class="chartlinks">
+            <a id="myHeader1" href="javascript:showonlyone('newboxes3');" ><strong>Column Chart </strong></a>
+                                          </div>
+										</td>
+										<td>
+											<div class="chartlinks">
+            <a id="myHeader2" href="javascript:showonlyone('newboxes4');" ><strong>Pie Chart</strong></a>
+											</div>
+										</td>
+										
+									</tr>
+								</table>
+							</DIV> 
+							<DIV ID="div2" class="vline" ><strong>Twitter Result<strong>
+								
+								<table>
+									<tr>
+										<td>
+											<div name="newboxes" id="newboxes5" class="default"></div>
+									  <script type="text/javascript" charset="utf-8">
+							  var chart;
+							$(document).ready(function() {
+							   chart = new Highcharts.Chart({
+								  chart: {
+									 renderTo: 'newboxes5',
+									 defaultSeriesType: 'column'
+								  },
+								  yAxis: {
+						min: 0,
+						title: {
+							text: 'No. of comments'
+						}
+						},
+								  title: {
+									 text: 'Column chart for <%=  params["message"]  %> '
+								  },
+								   legend: {
+								   
+									borderColor: 'nil'
+								},
+								  xAxis: {
+									 categories: ['Happy', 'Neutral', 'Sad']
+								  },
+								  tooltip: {
+									 formatter: function() {
+										return ''+
+											this.x +': '+ this.y +'';
+									 }
+								  },
+								  credits: {
+									 enabled: false
+								  },
+								  series: [{
+								
+									 data: [  { name : "Happy",
+                                                               color : "#254117",
+                                                               y : <%= @hsh_happy1.length%>
+                                                             } ,
+															 { name : "Neutral",
+                                                               color : "#3BB9FF",
+                                                               y : <%= @hsh_neutral1%>
+                                                             },
+															 { name : "Sad",
+                                                               color : "#800517",
+                                                               y : <%= @hsh_sad1.length %>}]
+						                                     }]
+								  
+							   });
+							   
+							   
+							});
+							</script>
+     
+										</td>
+										<td>
+											<div name="newboxes" id="newboxes6" class="default"></div>
+												 <script type="text/javascript">
+												 var chart;
+												Highcharts.setOptions({
+                                                colors: ['#254117', '#800517','#3BB9FF']
+                                                 });
+										$(document).ready(function() {
+										   chart = new Highcharts.Chart({
+											  chart: {
+												 renderTo: 'newboxes6',
+												 plotBackgroundColor: null,
+												 plotBorderWidth: null,
+												 plotShadow: false
+											  },
+											  title: {
+												 text: 'Pie chart for <%=  params["message"]  %> '
+											  },
+											   legend: {
+												
+												borderColor: 'nil'
+											},
+											  tooltip: {
+												 formatter: function() {
+													return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+												 }
+											  },
+											  plotOptions: {
+												 pie: {
+													allowPointSelect: true,
+													cursor: 'pointer',
+													dataLabels: {
+													   enabled: false
+													},
+													showInLegend: true
+												 }
+											  },
+											   series: [{
+												 type: 'pie',
+												 name: 'Mood',
+												 data: [
+												   ['HAPPY',<%= @pie_happy1 %>],
+							                       ['SAD',<%= @pie_sad1 %>],
+							                       ['NEUTRAL',<%= @pie_neutral1 %>],
+												 ]
+											  }]
+										   });
+										});
+														
+												</script>
+
+
+										</td>
+										
+									</tr>
+								</table>
+								<table align = "left">
+									<tr>
+										<td>
+											<div class="chartlinks">
+            <a id="myHeader1" href="javascript:showonlyone('newboxes5');" ><strong>Column Chart</strong></a>
+												</div>
+										</td>
+										<td>
+											 <div class="chartlinks">
+            <a id="myHeader2" href="javascript:showonlyone('newboxes6');" ><strong>Pie Chart</strong></a>
+										</div>
+										</td>	
+										
+									</tr>
+								</table>
+							</div>
+					<DIV ID="div3" class="vline" >							
+								
+								<table>
+									<tr>
+										<td >
+											 <div name="newboxes" id="newboxes7" class="default" width:1000px;
+		height:1000px;></div>
+                                          <script type="text/javascript" charset="utf-8" >
+		
+			var chart;
+			$(document).ready(function() {
+				chart = new Highcharts.Chart({
+					chart: {
+						renderTo: 'newboxes7',
+						defaultSeriesType: 'column'
+					},
+					title: {
+						text: 'Comparison chart for <%=  params["message"]  %>'
+					},
+					xAxis: {
+						categories: ['Twitter', 'Facebook']
+					},
+					yAxis: {
+						min: 0,
+						title: {
+							text: 'Percentage'
+						}
+					},
+					legend: {
+						borderColor: 'nil' 
+					},
+					tooltip: {
+						formatter: function() {
+							return '<b>'+ this.x +'</b><br/>'+
+								 this.series.name +' Percentage : '+ this.y +'<br/>'
+								 
+						}
+					},
+					plotOptions: {
+						column: {
+							stacking: 'percent'
+						}
+					},
+				    series: [{
+                            name: 'Happy',
+                            data: [<%= @pie_happy1%>, <%= @pie_happy2%> ]
+                            } , {
+                            name: 'Sad',
+                            data: [<%= @pie_sad1%>, <%= @pie_sad2%> ]
+                            }, {
+                            name: 'Neutral',
+                            data: [<%= @pie_neutral1%>, <%= @pie_neutral2%> ]
+}]
+				});
+				
+				
+			});
+				
+		</script>
+
+
+			</td>
+										
+				
+									</tr>
+								</table>
+							</DIV>
+							</td>
+							
+<% rescue ZeroDivisionError %>
+<%= "Sry no comments found for " %><%=  params["message"]  %>
+<% end %>
+	
+
+	   
+		</body>
+	</html>

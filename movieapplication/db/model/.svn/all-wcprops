@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/35/trunk/db/model
+END
+history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/31/trunk/db/model/history.sql
+END
+plotkeywords.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/31/trunk/db/model/plotkeywords.sql
+END
+movieModel.mwb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/16/trunk/db/model/movieModel.mwb
+END
+professionals.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/31/trunk/db/model/professionals.sql
+END
+entshow.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/35/trunk/db/model/entshow.sql
+END
+showkeywords.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/31/trunk/db/model/showkeywords.sql
+END
+cast.sql
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/31/trunk/db/model/cast.sql
+END
+proftypes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/31/trunk/db/model/proftypes.sql
+END
+entshowtypes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/31/trunk/db/model/entshowtypes.sql
+END
+movie.sql
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/27/trunk/db/model/movie.sql
+END

@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>
+	all data stored
+</title>
+</head>
+
+<body>
+<P> All messages
+
+<%= link_to 'Delete ALL', :controller => 'listmsgs', :action => 'destroy_all' %>
+
+<TABLE border=1>
+        <% @msgs.each do |m| %>
+        <tr><TD>        <%= m.message %>        </td>
+        <TD>        <%= m.score %>        </td></Tr>
+        <% end         %>
+</table>
+</body>
+</html>

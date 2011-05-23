@@ -1,0 +1,2 @@
+module EmosHelper
+end

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0023)http://localhost/m5.php -->
+<HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Untitled Document</TITLE><LINK 
+href="home2_files/h2.css" type=text/css rel=stylesheet>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.2900.3676" name=GENERATOR></HEAD>
+<BODY>
+<FORM id=form1 name=form1 action="" method=post>
+<TABLE height=607 cellSpacing=0 cellPadding=0 width=927 align=center border=1 
+valing="">
+  <TBODY>
+  <TR>
+    <TD class=text4 colSpan=2 rowSpan=2><FONT 
+      size=+3><STRONG>MOVIEFUN</STRONG> 
+      <DIV align=right></DIV>
+      <DIV align=right></DIV></LABEL></FONT></TD>
+    <TD colSpan=2 height=52>
+      <DIV align=right><INPUT id=home type=submit value=HOME name=home> 
+</DIV></TD>
+    <TD align=right width=119>
+      <DIV align=right><INPUT id=home2 type=submit value="about us" name=home2> 
+      </DIV>
+      <DIV align=right></DIV></TD>
+    <TD colSpan=2>
+      <DIV align=right><INPUT id=home3 type=submit value=contacts name=home3> 
+      </DIV></TD></TR>
+  <TR>
+    <TD colSpan=2 height=48>
+      <DIV align=right>MOVIE</DIV></TD>
+    <TD colSpan=2 height=48>
+      <DIV align=right><LABEL>
+      <DIV align=center><INPUT id=textfield name=textfield> 
+    </DIV></LABEL></DIV></TD>
+    <TD width=59>
+      <DIV align=right><INPUT id=home4 type=submit value=search name=home4> 
+      </DIV></TD></TR>
+  <TR>
+    <TD vAlign=top align=middle colSpan=7 height=66>
+      <DIV>
+      <P>banner</P></DIV></TD></TR>
+  <TR>
+    <TD vAlign=top align=middle colSpan=7 height=24>Ads</TD></TR>
+  <TR>
+    <TD vAlign=top align=middle width=205 height=86><FONT class=text5 
+      size=+2><STRONG>Top 10 searchs</STRONG></FONT><STRONG>&nbsp;</STRONG></TD>
+    <TD vAlign=top align=middle colSpan=3 height=86 rowSpan=2>
+      <P> </P>
+      <P><INPUT maxLength=30 size=35 name=input5> &nbsp;&nbsp; <SELECT 
+      class=inputbox name=select4> <OPTION value="" selected>Select</OPTION> 
+        <OPTION value=Actor>Actor</OPTION> <OPTION 
+        value=Actress>Actress</OPTION> <OPTION value=Director>Director</OPTION> 
+        <OPTION value=Lyricist>Lyricist</OPTION> <OPTION 
+        value=Composer>Composer</OPTION></SELECT> &nbsp;&nbsp; <INPUT id=radio4 
+      type=radio value=radio name=radio> <FONT 
+      size=+1><STRONG>Not</STRONG></FONT> </P>
+      <P><INPUT maxLength=30 size=35 name=input5> &nbsp;&nbsp; <SELECT 
+      class=inputbox name=select4> <OPTION value="" selected>Select</OPTION> 
+        <OPTION value=Actor>Actor</OPTION> <OPTION 
+        value=Actress>Actress</OPTION> <OPTION value=Director>Director</OPTION> 
+        <OPTION value=Lyricist>Lyricist</OPTION> <OPTION 
+        value=Composer>Composer</OPTION></SELECT> &nbsp; <INPUT id=radio5 
+      type=radio value=radio name=radio> <FONT 
+      size=+1><STRONG>Not</STRONG></FONT></P>
+      <P><INPUT maxLength=30 size=35 name=input5> &nbsp;&nbsp; <SELECT 
+      class=inputbox name=select4> <OPTION value="" selected>Select</OPTION> 
+        <OPTION value=Actor>Actor</OPTION> <OPTION 
+        value=Actress>Actress</OPTION> <OPTION value=Director>Director</OPTION> 
+        <OPTION value=Lyricist>Lyricist</OPTION> <OPTION 
+        value=Composer>Composer</OPTION></SELECT> &nbsp; <INPUT id=radio6 
+      type=radio value=radio name=radio> <FONT 
+      size=+1><STRONG>Not</STRONG></FONT></P>
+      <P><INPUT type=button value=submit name=input5> </P></TD>
+    <TD vAlign=top align=middle colSpan=3 height=86><FONT class=text5 
+      size=+2><STRONG>NEWS</STRONG></FONT></TD></TR>
+  <TR>
+    <TD height=43>&nbsp;</TD>
+    <TD colSpan=3 height=43>&nbsp;</TD></TR>
+  <TR>
+    <TD height=174>&nbsp;</TD>
+    <TD width=180 height=174>&nbsp;</TD>
+    <TD width=170 height=174>&nbsp;</TD>
+    <TD width=174>&nbsp;</TD>
+    <TD colSpan=3 height=174>&nbsp;</TD></TR>
+  <TR>
+    <TD vAlign=top align=middle colSpan=7 
+      height=58><STRONG>&nbsp;Home|contacts|about 
+us|etc</STRONG></TD></TR></TBODY></TABLE></FORM></BODY></HTML>

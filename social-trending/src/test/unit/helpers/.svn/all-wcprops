@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/29/trunk/src/test/unit/helpers
+END
+emos_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/29/trunk/src/test/unit/helpers/emos_helper_test.rb
+END
+search_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/29/trunk/src/test/unit/helpers/search_helper_test.rb
+END
+listmsgs_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/29/trunk/src/test/unit/helpers/listmsgs_helper_test.rb
+END
+home_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/29/trunk/src/test/unit/helpers/home_helper_test.rb
+END
+tst1s_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/29/trunk/src/test/unit/helpers/tst1s_helper_test.rb
+END
