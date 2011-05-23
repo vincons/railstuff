@@ -1,0 +1,1054 @@
+
+
+Started GET "/home" for 127.0.0.1 at Sun May 15 23:32:06 +0530 2011
+
+ActionController::RoutingError (No route matches "/home"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/homes" for 127.0.0.1 at Sun May 15 23:32:11 +0530 2011
+
+ActionController::RoutingError (No route matches "/homes"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home" for 127.0.0.1 at Sun May 15 23:33:06 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun May 15 23:39:25 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index1.html.erb" for 127.0.0.1 at Sun May 15 23:50:27 +0530 2011
+
+ActionController::RoutingError (No route matches "/index1.html.erb"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun May 15 23:51:11 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index2" for 127.0.0.1 at Sun May 15 23:51:18 +0530 2011
+
+ActionController::RoutingError (No route matches "/index2"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/index2" for 127.0.0.1 at Sun May 15 23:51:44 +0530 2011
+
+ActionController::RoutingError (No route matches "/index2"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/index2" for 127.0.0.1 at Mon May 16 07:12:15 +0530 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/index2" for 127.0.0.1 at Mon May 16 07:13:32 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index2"}
+Completed   in 25ms
+
+ActionView::MissingTemplate (Missing template home/show with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 16 07:14:21 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 16 07:14:23 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 16 07:14:43 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 16 07:15:12 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 16 07:15:35 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 16 07:15:46 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index2" for 127.0.0.1 at Mon May 16 07:16:32 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index2"}
+Completed   in 14ms
+
+ActionView::MissingTemplate (Missing template home/show with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/index2" for 127.0.0.1 at Mon May 16 07:17:54 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index2"}
+Completed   in 3ms
+
+ActionView::MissingTemplate (Missing template home/show with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/index2" for 127.0.0.1 at Mon May 16 07:17:55 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index2"}
+Completed   in 13ms
+
+ActionView::MissingTemplate (Missing template home/show with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/index1" for 127.0.0.1 at Mon May 16 07:17:57 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index1"}
+Completed   in 3ms
+
+ActionView::MissingTemplate (Missing template home/show with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/index1" for 127.0.0.1 at Mon May 16 07:18:46 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index1"}
+Completed   in 2ms
+
+ActionView::MissingTemplate (Missing template home/show with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/index1" for 127.0.0.1 at Mon May 16 07:18:55 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index1"}
+Completed   in 2ms
+
+ActionView::MissingTemplate (Missing template home/show with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/index1" for 127.0.0.1 at Mon May 16 07:18:58 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index1"}
+Completed   in 4ms
+
+ActionView::MissingTemplate (Missing template home/show with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/index1" for 127.0.0.1 at Mon May 16 07:18:58 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index1"}
+Completed   in 2ms
+
+ActionView::MissingTemplate (Missing template home/show with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/index2" for 127.0.0.1 at Mon May 16 07:19:03 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index2"}
+Completed   in 3ms
+
+ActionView::MissingTemplate (Missing template home/show with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/index2" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index2"}
+Rendered home/index2.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/css/styles.css" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'css' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/title.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/company.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/services.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/partners.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/support.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/info.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/clients.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/css/styles.css" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'css' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/news.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/contact.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/spacer.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/welcome.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/wel1.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/wel3.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/ab2.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/ab1.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/ab4.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/wel2.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/vis2.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/vis1.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/part1.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/vis4.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/ab3.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/vis3.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/ab5.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/vis5.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/vis6.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/news1.gif" for 127.0.0.1 at Mon May 16 07:19:29 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/news2.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/news3.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/test1.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/test4.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/images/test2.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/part2.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/part4.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/images/test3.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/part3.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/footer.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/b-wel.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/b-ab1.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/b-vis1.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/b-ab2.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/b-vis2.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/b-news.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/index_38.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/images/b-part.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/b-copy.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/b-links.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/company-over.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/services-over.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/info-over.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/partners-over.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/clients-over.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/support-over.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/news-over.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/images/contact-over.gif" for 127.0.0.1 at Mon May 16 07:19:30 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/index1" for 127.0.0.1 at Mon May 16 07:19:34 +0530 2011
+  Processing by HomeController#show as HTML
+  Parameters: {"id"=>"index1"}
+Rendered home/index1.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/stm31.js" for 127.0.0.1 at Mon May 16 07:19:34 +0530 2011
+  Processing by HomeController#show as JS
+  Parameters: {"id"=>"stm31"}
+Completed   in 7ms
+
+ActionView::MissingTemplate (Missing template home/stm31 with {:locale=>[:en, :en], :formats=>[:js, :html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  app/controllers/home_controller.rb:16:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/textstyle.css" for 127.0.0.1 at Mon May 16 07:19:34 +0530 2011
+  Processing by HomeController#show as CSS
+  Parameters: {"id"=>"textstyle"}
+Completed   in 4ms
+
+ActionView::MissingTemplate (Missing template home/textstyle with {:locale=>[:en, :en], :formats=>[:css], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  app/controllers/home_controller.rb:16:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/menu.js" for 127.0.0.1 at Mon May 16 07:19:34 +0530 2011
+  Processing by HomeController#show as JS
+  Parameters: {"id"=>"menu"}
+Completed   in 5ms
+
+ActionView::MissingTemplate (Missing template home/menu with {:locale=>[:en, :en], :formats=>[:js, :html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  app/controllers/home_controller.rb:16:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/images/example_logo.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/images/reachus.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/images/online_chat.jpg" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/welcome.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/left_welcome.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/images/right_welcome.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/bottom_welcome.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/window_left.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/window_right.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/images/window_middleleft.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/window_middleright.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/window_bottomleft.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/more.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/window_bottomright.gif" for 127.0.0.1 at Mon May 16 07:19:35 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/example_logo.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/head_ex.swf" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/menu.js" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+  Processing by HomeController#show as JS
+  Parameters: {"id"=>"menu"}
+Completed   in 2ms
+
+ActionView::MissingTemplate (Missing template home/menu with {:locale=>[:en, :en], :formats=>[:js, :html], :handlers=>[:rjs, :builder, :rhtml, :rxml, :erb]} in view paths "/home/raghav/railstuff/vincons/app/views"):
+  app/controllers/home_controller.rb:16:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/head_ex.swf" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/images/links_bg.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/leftbg.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/ex_tab-bar.swf" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/reachus.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/online_chat.jpg" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/images/welcome.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/left_welcome.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/right_welcome.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/bottom_welcome.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/window_left.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/ex_tab-bar.swf" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home/images/window_right.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/window_middleleft.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (62.4ms)
+
+
+Started GET "/home/images/window_bottomleft.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/images/window_middleright.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/images/bottombg.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/more.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/window_bottomright.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/window_topbg.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/images/window_bottombg.gif" for 127.0.0.1 at Mon May 16 07:19:38 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/images/links_bg.gif" for 127.0.0.1 at Mon May 16 07:19:39 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/images/left_welcome.gif" for 127.0.0.1 at Mon May 16 07:19:39 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/images/right_welcome.gif" for 127.0.0.1 at Mon May 16 07:19:39 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/images/leftbg.gif" for 127.0.0.1 at Mon May 16 07:19:39 +0530 2011
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
